@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t JoaquimCSantos/docker-react -f Dockerfile.dev .
+  - docker build -t joaquimcsantos/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run JoaquimCSantos/docker-react npm run test -- --coverage
+  - docker run joaquimcsantos/docker-react npm run test -- --coverage
